@@ -23,9 +23,10 @@ export default [
     rules: {
       'no-unused-vars': 'warn',
       'no-console': 'warn',
-      indent: ['warn', 2],
-      quotes: ['warn', 'single'],
-      semi: ['warn', 'always'],
+      'no-undef': 'off',
+      indent: ['error', 2],
+      quotes: ['error', 'single'],
+      semi: ['error', 'always'],
       'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off',
     },
