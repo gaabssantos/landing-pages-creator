@@ -134,3 +134,7 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+*storybook.log
+.storybook
+stories
