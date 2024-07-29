@@ -4,11 +4,27 @@ export default {
   title: 'Heading',
   component: Heading,
   args: {
-    children: 'Não sei',
+    children: 'Tema escuro',
+    light: false,
   },
   argTypes: {
     children: { type: 'string' },
   },
+  backgrounds: {
+    default: 'dark',
+  },
 };
 
-export const Template = (args) => <Heading {...args} />;
+export const Light = (args) => <Heading {...args} />;
+export const Dark = (args) => <Heading {...args} light={true} />;
+
+Light.parameters = {
+  backgrounds: {
+    default: 'light',
+  },
+};
+
+Dark.args = {
+  children: 'Tema claro',
+  light: true,
+};
